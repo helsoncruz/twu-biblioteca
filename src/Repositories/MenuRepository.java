@@ -16,6 +16,8 @@ public class MenuRepository {
     }
 
     private void InitiaLizeMenuList(){
-        this.menuList.add(new Menu(1,"List of books",true));
+        this.menuList.add(new Menu(1,"List of available books",true));
+        this.menuList.add(new Menu(2,"Check out available book",true));
+        this.menuList.add(new Menu(0,"Exit the application ",true));
     }
 }
