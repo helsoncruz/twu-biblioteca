@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.stream.Collectors;
 
 public class BookRepository {
-    private ArrayList<Book> bookList = new ArrayList<Book>();
+    private ArrayList<Book> bookList;
 
     public BookRepository() {
         InitializeBookList();
@@ -28,6 +28,7 @@ public class BookRepository {
     }
 
     private void InitializeBookList(){
+        this.bookList = new ArrayList<Book>();
         this.bookList.add(new Book(0,"Helson", "Book 1", 2010, true));
         this.bookList.add(new Book(1,"Peter", "Book 2", 2000, true));
         this.bookList.add(new Book(2,"John", "Book 3", 2020,true));

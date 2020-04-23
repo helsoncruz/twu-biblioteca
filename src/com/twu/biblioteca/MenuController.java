@@ -2,8 +2,10 @@ package com.twu.biblioteca;
 
 import Model.Book;
 import Repositories.BookRepository;
+import Repositories.MovieRepository;
 import View.BookView;
 import View.MenuView;
+import View.MovieView;
 
 import java.util.Scanner;
 
@@ -11,19 +13,22 @@ public class MenuController {
     private MenuView menuView;
     private BookView bookView;
     private BookRepository bookRepository;
+    private MovieRepository movieRepository;
+    private MovieView movieView;
 
     public MenuController() {
         bookRepository = new BookRepository();
+        movieRepository = new MovieRepository();
         bookView = new BookView(bookRepository);
         menuView = new MenuView(bookRepository);
-
+        movieView = new MovieView(movieRepository);
     }
 
     public void SelectMenuOption(){
         int chooserOption = -1;
         Scanner scan = new Scanner(System.in);
         menuView.ShowAllMenuOptions();
-        while(chooserOption < 0 || chooserOption > 3){
+        while(chooserOption < 0 || chooserOption > 4){
             System.out.println("Choose a menu option id:");
             while(!scan.hasNextInt()){
                 System.out.println("Please, insert only the ID:");
@@ -34,6 +39,7 @@ public class MenuController {
                 case 1: bookView.ShowAllAvailableBooks(); break;
                 case 2: CheckoutBook();break;
                 case 3: ReturnABook();break;
+                case 4: movieView.ShowAvailableMovies();break;
                 case 0: EndTheApplication();break;
                 default: System.out.println("Please select a valid option!");break;
             }

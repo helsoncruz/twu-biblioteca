@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.stream.Collectors;
 
 public class MenuRepository {
-    private final ArrayList<Menu> menuList = new ArrayList<Menu>();
+    private ArrayList<Menu> menuList;
 
     public MenuRepository() {
         InitiaLizeMenuList();
@@ -17,9 +17,11 @@ public class MenuRepository {
     }
 
     private void InitiaLizeMenuList(){
+        this.menuList = new ArrayList<Menu>();
         this.menuList.add(new Menu(1,"List of available books",true));
         this.menuList.add(new Menu(2,"Check out available book",true));
         this.menuList.add(new Menu(3,"Return a book",true));
+        this.menuList.add(new Menu(4,"List of available movies",true));
         this.menuList.add(new Menu(0,"Exit the application ",true));
     }
 
