@@ -5,6 +5,8 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 public class BookRepositoryTest {
@@ -12,21 +14,21 @@ public class BookRepositoryTest {
     @Test
     public void RepositoryIsNotEmpty() {
         ArrayList<Book> bookList = repository.getAvailableBookList();
-        assertFalse(bookList.isEmpty());
+        assertThat(bookList.isEmpty(), is(false));
     }
 
     @Test
     public void ReturnValidBookWhenTryToCheckout(){
         Book checkedOutBook = repository.CheckoutBook(0);
         Book book1 = new Book(0,"Helson", "Book 1", 2010,true);
-        assertSame(checkedOutBook.getTitle(), book1.getTitle());
+        assertThat(checkedOutBook.getTitle(), is(equalTo(book1.getTitle())));
     }
 
     @Test
     public void ReturnNotValidBookWhenTryToCheckout(){
         Book checkedOutBook = repository.CheckoutBook(0);
         Book checkedOutBook2 = repository.CheckoutBook(0);
-        assertNull(checkedOutBook2);
+        assertThat(checkedOutBook2, is(equalTo(null)));
     }
 
     @Test
@@ -35,7 +37,7 @@ public class BookRepositoryTest {
         Book checkedOutBook = repository.CheckoutBook(id);
         Book getBook = repository.getAllBooks().get(id);
         boolean isAvailable = getBook.isAvailable();
-        assertFalse(isAvailable);
+        assertThat(isAvailable, is(false));
     }
 
     @Test
@@ -43,6 +45,6 @@ public class BookRepositoryTest {
         Book checkedOutBook = repository.CheckoutBook(1);
         boolean returned = repository.ReturnABook(checkedOutBook.getBookId());
         boolean isAvailable = repository.getAllBooks().get(checkedOutBook.getBookId()).isAvailable();
-        assertTrue(isAvailable);
+        assertThat(isAvailable, is(true));
     }
 }

@@ -21,24 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5fc4ce9e-481f-41e2-8870-89fbcaa3f67f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/Model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/Model/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/Repositories/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/Repositories/BookRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/Repositories/MenuRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/Repositories/MenuRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/View/MenuView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/View/MenuView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/MenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/MenuRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/MenuRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/MovieRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/MovieRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enums/MovieRating.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Movie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositories/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositories/MenuRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/MenuRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/MenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MenuView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MenuRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MenuRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/BookRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/BookRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/BookRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BookRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +70,7 @@
       <recent name="Model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BibliotecaApp">
+  <component name="RunManager" selected="JUnit.CustomerRepositoryTest">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="biblioteca" />
@@ -98,6 +82,55 @@
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookRepositoryTest.ReturnNotValidBookWhenTryToCheckout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookRepositoryTest" />
+      <option name="METHOD_NAME" value="ReturnNotValidBookWhenTryToCheckout" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.CustomerRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="MenuRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -116,56 +149,6 @@
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MovieRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MovieRepositoryTest.ReturnValidMovieWhenTryToCheckout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MovieRepositoryTest" />
-      <option name="METHOD_NAME" value="ReturnValidMovieWhenTryToCheckout" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MovieRepositoryTest.VerifyThatRepositoryIsNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MovieRepositoryTest" />
-      <option name="METHOD_NAME" value="VerifyThatRepositoryIsNotEmpty" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
@@ -175,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerRepositoryTest" />
+        <item itemvalue="JUnit.BookRepositoryTest.ReturnNotValidBookWhenTryToCheckout" />
+        <item itemvalue="JUnit.BookRepositoryTest" />
         <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.MenuRepositoryTest" />
-        <item itemvalue="JUnit.MovieRepositoryTest" />
-        <item itemvalue="JUnit.MovieRepositoryTest.VerifyThatRepositoryIsNotEmpty" />
-        <item itemvalue="JUnit.MovieRepositoryTest.ReturnValidMovieWhenTryToCheckout" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +179,7 @@
       <workItem from="1587554317430" duration="12764000" />
       <workItem from="1587588760787" duration="21428000" />
       <workItem from="1587675134779" duration="476000" />
-      <workItem from="1587675830407" duration="4856000" />
+      <workItem from="1587675830407" duration="5611000" />
     </task>
     <servers />
   </component>
@@ -242,29 +225,29 @@
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state width="504" height="466" key="DebuggerActiveHint/0.23.1440.827@0.23.1440.827" timestamp="1587643093590" />
-    <state width="1878" height="438" key="GridCell.Tab.0.bottom" timestamp="1587678981395">
+    <state width="1878" height="438" key="GridCell.Tab.0.bottom" timestamp="1587681244779">
       <screen x="-1920" y="-62" width="1920" height="1080" />
     </state>
     <state width="1878" height="288" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587667131138" />
-    <state width="1878" height="438" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587678981395" />
+    <state width="1878" height="438" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587681244779" />
     <state width="1398" height="288" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1587653321762" />
-    <state width="1878" height="438" key="GridCell.Tab.0.center" timestamp="1587678981393">
+    <state width="1878" height="438" key="GridCell.Tab.0.center" timestamp="1587681244777">
       <screen x="-1920" y="-62" width="1920" height="1080" />
     </state>
     <state width="1878" height="288" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587667131137" />
-    <state width="1878" height="438" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587678981393" />
+    <state width="1878" height="438" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587681244777" />
     <state width="1398" height="288" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1587653321761" />
-    <state width="1878" height="438" key="GridCell.Tab.0.left" timestamp="1587678981392">
+    <state width="1878" height="438" key="GridCell.Tab.0.left" timestamp="1587681244776">
       <screen x="-1920" y="-62" width="1920" height="1080" />
     </state>
     <state width="1878" height="288" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587667131136" />
-    <state width="1878" height="438" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587678981392" />
+    <state width="1878" height="438" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587681244776" />
     <state width="1398" height="288" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1587653321760" />
-    <state width="1878" height="438" key="GridCell.Tab.0.right" timestamp="1587678981394">
+    <state width="1878" height="438" key="GridCell.Tab.0.right" timestamp="1587681244778">
       <screen x="-1920" y="-62" width="1920" height="1080" />
     </state>
     <state width="1878" height="288" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587667131138" />
-    <state width="1878" height="438" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587678981394" />
+    <state width="1878" height="438" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587681244778" />
     <state width="1398" height="288" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1587653321761" />
     <state width="1878" height="376" key="GridCell.Tab.1.bottom" timestamp="1587678637520">
       <screen x="-1920" y="-62" width="1920" height="1080" />
@@ -298,6 +281,10 @@
       <screen x="-1920" y="-62" width="1920" height="1080" />
     </state>
     <state x="-1254" y="74" width="588" height="807" key="find.popup/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587680562834" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1587681202984">
+      <screen x="-1920" y="-62" width="1920" height="1080" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587681202984" />
     <state x="385" y="174" width="670" height="676" key="search.everywhere.popup" timestamp="1587592890900">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
