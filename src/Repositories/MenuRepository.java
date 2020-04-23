@@ -19,21 +19,22 @@ public class MenuRepository {
     private void InitiaLizeMenuList(){
         this.menuList = new ArrayList<Menu>();
         this.menuList.add(new Menu(1,"List of available books",true));
-        this.menuList.add(new Menu(2,"Check out available book",true));
+        this.menuList.add(new Menu(2,"Check out a book",true));
         this.menuList.add(new Menu(3,"Return a book",true));
         this.menuList.add(new Menu(4,"List of available movies",true));
+        this.menuList.add(new Menu(5,"Check out a movie",true));
         this.menuList.add(new Menu(0,"Exit the application ",true));
     }
 
     public void ActivateMenuOption(int id){
-        if(ThisIsvalidId(id))
+        if(IsIdValid(id))
             menuList.stream().filter(s->s.getOptionId() == id).findFirst().get().setActive(true);
     }
     public void DeactivateMenuOption(int id){
-        if(ThisIsvalidId(id))
+        if(IsIdValid(id))
             menuList.stream().filter(s->s.getOptionId() == id).findFirst().get().setActive(false);
     }
-    private boolean ThisIsvalidId(int id){
+    private boolean IsIdValid(int id){
         if(menuList.stream().noneMatch(s->s.getOptionId() == id)){
             return false;
         }

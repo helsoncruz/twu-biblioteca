@@ -1,6 +1,7 @@
 package com.twu.biblioteca;
 
 import Model.Book;
+import Model.Movie;
 import Repositories.BookRepository;
 import Repositories.MovieRepository;
 import View.BookView;
@@ -40,6 +41,7 @@ public class MenuController {
                 case 2: CheckoutBook();break;
                 case 3: ReturnABook();break;
                 case 4: movieView.ShowAvailableMovies();break;
+                case 5: CheckoutAMovie();break;
                 case 0: EndTheApplication();break;
                 default: System.out.println("Please select a valid option!");break;
             }
@@ -96,5 +98,27 @@ public class MenuController {
                 System.out.println("That is not a valid book to return.");
             }
         }
+    }
+
+    private void CheckoutAMovie() {
+        int movieId;
+        Movie movie;
+        System.out.println("\nThese are all available movies:");
+        movieView.ShowAvailableMovies();
+        do{
+            System.out.println("Please, choose the id of book that you want:");
+            Scanner scan = new Scanner(System.in);
+            while(!scan.hasNextInt()){
+                System.out.println("Please, insert only the ID:");
+                scan.next();
+            }
+            movieId = scan.nextInt();
+            movie = movieRepository.CheckoutMovie(movieId);
+            if(movie == null){
+                System.out.println("Sorry! That movie is not available! \n");
+            }
+        }while(movie == null);
+        System.out.println("Thank you! Enjoy the movie! \n");
+        SelectMenuOption();
     }
 }

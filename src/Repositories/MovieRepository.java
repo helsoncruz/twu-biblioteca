@@ -22,4 +22,20 @@ public class MovieRepository {
     public ArrayList<Movie> getAllAvailableMovies() {
         return (ArrayList<Movie>) movieList.stream().filter(Movie::isAvailable).collect(Collectors.toList());
     }
+
+    public Movie CheckoutMovie(int id){
+        if(IsIdValid(id) && movieList.get(id).isAvailable()){
+           Movie checkedOut = movieList.get(id);
+           checkedOut.setAvailable(false);
+           return checkedOut;
+        }
+        return null;
+    }
+
+    private boolean IsIdValid(int id){
+        if(movieList.stream().noneMatch(s->s.getMovieId() == id)){
+            return false;
+        }
+        return true;
+    }
 }

@@ -23,9 +23,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/biblioteca/Repositories/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/Repositories/BookRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/biblioteca/Repositories/MenuRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/Repositories/MenuRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/MenuController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repositories/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/BookRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repositories/MenuRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/MenuRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repositories/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/MovieRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,24 +85,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuRepositoryTest.ShouldActivateTheMenuOption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in biblioteca" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MenuRepositoryTest" />
-      <option name="METHOD_NAME" value="ShouldActivateTheMenuOption" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuRepositoryTest.ShouldDeactivateTheMenuOption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieRepositoryTest.ReturnValidMovieWhenTryToCheckout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -108,8 +103,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MenuRepositoryTest" />
-      <option name="METHOD_NAME" value="ShouldDeactivateTheMenuOption" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MovieRepositoryTest" />
+      <option name="METHOD_NAME" value="ReturnValidMovieWhenTryToCheckout" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,10 +155,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.BibliotecaApp" />
+        <item itemvalue="JUnit.MovieRepositoryTest.ReturnValidMovieWhenTryToCheckout" />
+        <item itemvalue="JUnit.All in biblioteca" />
         <item itemvalue="JUnit.MovieRepositoryTest.ShouldAllMoviesAreAvailable" />
         <item itemvalue="JUnit.MovieRepositoryTest.VerifyThatRepositoryIsNotEmpty" />
-        <item itemvalue="JUnit.MenuRepositoryTest.ShouldActivateTheMenuOption" />
-        <item itemvalue="JUnit.MenuRepositoryTest.ShouldDeactivateTheMenuOption" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587554315683</updated>
       <workItem from="1587554317430" duration="12764000" />
-      <workItem from="1587588760787" duration="14896000" />
+      <workItem from="1587588760787" duration="17222000" />
     </task>
     <servers />
   </component>
@@ -218,37 +213,45 @@
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state width="504" height="466" key="DebuggerActiveHint/0.23.1440.827@0.23.1440.827" timestamp="1587643093590" />
-    <state width="1398" height="288" key="GridCell.Tab.0.bottom" timestamp="1587652369907">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1878" height="288" key="GridCell.Tab.0.bottom" timestamp="1587666952619">
+      <screen x="-1920" y="-34" width="1920" height="1080" />
     </state>
-    <state width="1398" height="288" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1587652369907" />
-    <state width="1398" height="288" key="GridCell.Tab.0.center" timestamp="1587652369906">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1878" height="288" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587666952619" />
+    <state width="1398" height="288" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1587653321762" />
+    <state width="1878" height="288" key="GridCell.Tab.0.center" timestamp="1587666952617">
+      <screen x="-1920" y="-34" width="1920" height="1080" />
     </state>
-    <state width="1398" height="288" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1587652369906" />
-    <state width="1398" height="288" key="GridCell.Tab.0.left" timestamp="1587652369906">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1878" height="288" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587666952617" />
+    <state width="1398" height="288" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1587653321761" />
+    <state width="1878" height="288" key="GridCell.Tab.0.left" timestamp="1587666952616">
+      <screen x="-1920" y="-34" width="1920" height="1080" />
     </state>
-    <state width="1398" height="288" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1587652369906" />
-    <state width="1398" height="288" key="GridCell.Tab.0.right" timestamp="1587652369906">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1878" height="288" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587666952616" />
+    <state width="1398" height="288" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1587653321760" />
+    <state width="1878" height="288" key="GridCell.Tab.0.right" timestamp="1587666952618">
+      <screen x="-1920" y="-34" width="1920" height="1080" />
     </state>
-    <state width="1398" height="288" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1587652369906" />
-    <state width="1398" height="266" key="GridCell.Tab.1.bottom" timestamp="1587649542995">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1878" height="288" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587666952618" />
+    <state width="1398" height="288" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1587653321761" />
+    <state width="1878" height="376" key="GridCell.Tab.1.bottom" timestamp="1587666648739">
+      <screen x="-1920" y="-34" width="1920" height="1080" />
     </state>
+    <state width="1878" height="376" key="GridCell.Tab.1.bottom/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587666648739" />
     <state width="1398" height="266" key="GridCell.Tab.1.bottom/0.23.1440.827@0.23.1440.827" timestamp="1587649542995" />
-    <state width="1398" height="266" key="GridCell.Tab.1.center" timestamp="1587649542994">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1878" height="376" key="GridCell.Tab.1.center" timestamp="1587666648738">
+      <screen x="-1920" y="-34" width="1920" height="1080" />
     </state>
+    <state width="1878" height="376" key="GridCell.Tab.1.center/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587666648738" />
     <state width="1398" height="266" key="GridCell.Tab.1.center/0.23.1440.827@0.23.1440.827" timestamp="1587649542994" />
-    <state width="1398" height="266" key="GridCell.Tab.1.left" timestamp="1587649542994">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1878" height="376" key="GridCell.Tab.1.left" timestamp="1587666648737">
+      <screen x="-1920" y="-34" width="1920" height="1080" />
     </state>
+    <state width="1878" height="376" key="GridCell.Tab.1.left/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587666648737" />
     <state width="1398" height="266" key="GridCell.Tab.1.left/0.23.1440.827@0.23.1440.827" timestamp="1587649542994" />
-    <state width="1398" height="266" key="GridCell.Tab.1.right" timestamp="1587649542995">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1878" height="376" key="GridCell.Tab.1.right" timestamp="1587666648738">
+      <screen x="-1920" y="-34" width="1920" height="1080" />
     </state>
+    <state width="1878" height="376" key="GridCell.Tab.1.right/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587666648738" />
     <state width="1398" height="266" key="GridCell.Tab.1.right/0.23.1440.827@0.23.1440.827" timestamp="1587649542995" />
     <state x="508" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587561705308">
       <screen x="0" y="23" width="1440" height="827" />

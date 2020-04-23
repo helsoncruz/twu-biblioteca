@@ -37,19 +37,16 @@ public class BookRepository {
     }
 
     public Book CheckoutBook(int id){
-        if(ThisIsvalidId(id)){
+        if(IsIdValid(id) && !bookList.get(id).isAvailable()){
             Book checkedOut = bookList.get(id);
-            if(!checkedOut.isAvailable()) {
-                return null;
-            }
-            bookList.get(id).setAvailable(false);
+            checkedOut.setAvailable(false);
             return checkedOut;
         }
         return null;
     }
 
     public boolean ReturnABook(int id){
-        if(ThisIsvalidId(id) && !bookList.get(id).isAvailable()){
+        if(IsIdValid(id) && !bookList.get(id).isAvailable()){
             Book bookReturned = bookList.get(id);
             bookReturned.setAvailable(true);
             return bookReturned.isAvailable();
@@ -57,7 +54,7 @@ public class BookRepository {
         return false;
     }
 
-    private boolean ThisIsvalidId(int id){
+    private boolean IsIdValid(int id){
         if(bookList.stream().noneMatch(s->s.getBookId() == id)){
             return false;
         }

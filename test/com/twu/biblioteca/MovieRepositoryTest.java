@@ -20,4 +20,10 @@ public class MovieRepositoryTest {
         ArrayList<Movie> movieList = repository.getAllAvailableMovies();
         assertFalse(movieList.stream().anyMatch(s->!s.isAvailable()));
     }
+
+    @Test
+    public void ReturnValidMovieWhenTryToCheckout(){
+        Movie rentedMovie = repository.CheckoutMovie(1);
+        assertTrue(rentedMovie != null && !rentedMovie.isAvailable());
+    }
 }
