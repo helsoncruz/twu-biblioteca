@@ -11,7 +11,7 @@ public class BookRepositoryTest {
     BookRepository repository = new BookRepository();
     @Test
     public void RepositoryIsNotEmpty() {
-        ArrayList<Book> bookList = repository.getBookList();
+        ArrayList<Book> bookList = repository.getAvailableBookList();
         assertFalse(bookList.isEmpty());
     }
 
@@ -30,8 +30,19 @@ public class BookRepositoryTest {
     }
 
     @Test
-    public void ThereIsAnyBookNotAvailableAfterCheckOut(){
+    public void TheBookIsNotAvailableAfterCheckOut(){
+        int id = 1;
+        Book checkedOutBook = repository.CheckoutBook(id);
+        Book getBook = repository.getAllBooks().get(id);
+        boolean isAvailable = getBook.isAvailable();
+        assertFalse(isAvailable);
+    }
+
+    @Test
+    public void ShouldReturnBookSuccessfully(){
         Book checkedOutBook = repository.CheckoutBook(1);
-        assertTrue(repository.getBookList().stream().anyMatch(s-> !s.isAvailable()));
+        boolean returned = repository.ReturnABook(checkedOutBook.getBookId());
+        boolean isAvailable = repository.getAllBooks().get(checkedOutBook.getBookId()).isAvailable();
+        assertTrue(isAvailable);
     }
 }

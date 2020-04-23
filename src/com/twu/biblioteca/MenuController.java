@@ -13,16 +13,17 @@ public class MenuController {
     private BookRepository bookRepository;
 
     public MenuController() {
-        menuView = new MenuView();
         bookRepository = new BookRepository();
         bookView = new BookView(bookRepository);
+        menuView = new MenuView(bookRepository);
+
     }
 
     public void SelectMenuOption(){
         int chooserOption = -1;
         Scanner scan = new Scanner(System.in);
         menuView.ShowAllMenuOptions();
-        while(chooserOption < 0 || chooserOption > 2){
+        while(chooserOption < 0 || chooserOption > 3){
             System.out.println("Choose a menu option id:");
             while(!scan.hasNextInt()){
                 System.out.println("Please, insert only the ID:");
@@ -30,8 +31,9 @@ public class MenuController {
             }
             chooserOption = scan.nextInt();
             switch (chooserOption){
-                case 1: bookView.ShowAllBooksAvailable(); break;
+                case 1: bookView.ShowAllAvailableBooks(); break;
                 case 2: CheckoutBook();break;
+                case 3: ReturnABook();break;
                 case 0: EndTheApplication();break;
                 default: System.out.println("Please select a valid option!");break;
             }
@@ -47,7 +49,7 @@ public class MenuController {
         int bookId;
         Book choosedBook;
         System.out.println("\nThese are all available books:");
-        bookView.ShowAllBooksAvailable();
+        bookView.ShowAllAvailableBooks();
         do{
             System.out.println("Please, choose the id of book that you want:");
             Scanner scan = new Scanner(System.in);
@@ -63,5 +65,30 @@ public class MenuController {
         }while(choosedBook == null);
         System.out.println("Thank you! Enjoy the book! \n");
         SelectMenuOption();
+    }
+
+    private void ReturnABook(){
+        int bookId;
+        boolean returned = false;
+        boolean tryAgain = true;
+        System.out.println("\nThese are all unavailable books:");
+        bookView.ShowAllUnavailableBooks();
+        while(tryAgain) {
+            System.out.println("Please, enter the id of the book you want to return\n:");
+            Scanner scan = new Scanner(System.in);
+            while (!scan.hasNextInt()) {
+                System.out.println("Please, insert only the ID:");
+                scan.next();
+            }
+            bookId = scan.nextInt();
+            returned = bookRepository.ReturnABook(bookId);
+            if (returned) {
+                tryAgain = false;
+                System.out.println("Thank you for returning the book! \n");
+                SelectMenuOption();
+            } else {
+                System.out.println("That is not a valid book to return.");
+            }
+        }
     }
 }

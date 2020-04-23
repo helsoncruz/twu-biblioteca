@@ -11,8 +11,16 @@ public class BookRepository {
         InitializeBookList();
     }
 
-    public ArrayList<Book> getBookList() {
-        return (ArrayList<Book>) bookList.stream().filter(s->s.isAvailable()).collect(Collectors.toList());
+    public ArrayList<Book> getAvailableBookList() {
+        return (ArrayList<Book>) bookList.stream().filter(Book::isAvailable).collect(Collectors.toList());
+    }
+
+    public ArrayList<Book> getAllBooks() {
+        return bookList;
+    }
+
+    public ArrayList<Book> getUnavailableBookList() {
+        return (ArrayList<Book>) bookList.stream().filter(s-> !s.isAvailable()).collect(Collectors.toList());
     }
 
     public void setBookList(ArrayList<Book> bookList) {
@@ -28,15 +36,30 @@ public class BookRepository {
     }
 
     public Book CheckoutBook(int id){
-        try{
+        if(ThisIsvalidId(id)){
             Book checkedOut = bookList.get(id);
-            if(!checkedOut.isAvailable()){
+            if(!checkedOut.isAvailable()) {
                 return null;
             }
             bookList.get(id).setAvailable(false);
             return checkedOut;
-        }catch(Exception ex){
-            return null;
         }
+        return null;
+    }
+
+    public boolean ReturnABook(int id){
+        if(ThisIsvalidId(id) && !bookList.get(id).isAvailable()){
+            Book bookReturned = bookList.get(id);
+            bookReturned.setAvailable(true);
+            return bookReturned.isAvailable();
+        }
+        return false;
+    }
+
+    private boolean ThisIsvalidId(int id){
+        if(bookList.stream().noneMatch(s->s.getBookId() == id)){
+            return false;
+        }
+        return true;
     }
 }
