@@ -8,50 +8,50 @@ public class Movie {
     private boolean Available;
 
     public Movie(int movieId, String name, String director, int year, boolean available) {
-        MovieId = movieId;
-        Name = name;
-        Director = director;
-        Year = year;
-        Available = available;
+        this.MovieId = movieId;
+        this.Name = name;
+        this.Director = director;
+        this.Year = year;
+        this.Available = available;
     }
 
     public int getMovieId() {
-        return MovieId;
+        return this.MovieId;
     }
 
     public void setMovieId(int movieId) {
-        MovieId = movieId;
+        this.MovieId = movieId;
     }
 
     public String getName() {
-        return Name;
+        return this.Name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.Name = name;
     }
 
     public String getDirector() {
-        return Director;
+        return this.Director;
     }
 
     public void setDirector(String director) {
-        Director = director;
+        this.Director = director;
     }
 
     public int getYear() {
-        return Year;
+        return this.Year;
     }
 
     public void setYear(int year) {
-        Year = year;
+        this.Year = year;
     }
 
     public boolean isAvailable() {
-        return Available;
+        return this.Available;
     }
 
     public void setAvailable(boolean available) {
-        Available = available;
+        this.Available = available;
     }
 }

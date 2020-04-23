@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
+import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class MenuRepositoryTest {
@@ -12,14 +13,14 @@ public class MenuRepositoryTest {
     @Test
     public void ValidateIfRepositoryIsNotEmpty() {
         ArrayList<Menu> menuList = repository.getMenuList();
-        assertFalse(menuList.isEmpty());
+        assertThat(menuList.isEmpty(), is(false));
     }
 
     @Test
     public void ShouldDeactivateTheMenuOption() {
         repository.DeactivateMenuOption(1);
         ArrayList<Menu> menuList = repository.getMenuList();
-        assertTrue(menuList.stream().noneMatch(s->s.getOptionId() == 1));
+        assertThat(menuList.stream().noneMatch(s->s.getOptionId() == 1), is(true));
     }
 
     @Test
@@ -27,6 +28,6 @@ public class MenuRepositoryTest {
         repository.DeactivateMenuOption(1);
         repository.ActivateMenuOption(1);
         ArrayList<Menu> menuList = repository.getMenuList();
-        assertTrue(menuList.stream().anyMatch(s->s.getOptionId() == 1));
+        assertThat(menuList.stream().anyMatch(s->s.getOptionId() == 1), is(true));
     }
 }

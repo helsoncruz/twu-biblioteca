@@ -3,6 +3,8 @@ package com.twu.biblioteca;
 import Model.Movie;
 import Repositories.MovieRepository;
 import org.junit.Test;
+
+import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 import java.util.ArrayList;
 
@@ -12,18 +14,18 @@ public class MovieRepositoryTest {
     @Test
     public void VerifyThatRepositoryIsNotEmpty(){
         ArrayList<Movie> movieList = repository.getAllAvailableMovies();
-        assertFalse(movieList.isEmpty());
+        assertThat(movieList.isEmpty(), is(false));
     }
 
     @Test
     public void ShouldAllMoviesAreAvailable(){
         ArrayList<Movie> movieList = repository.getAllAvailableMovies();
-        assertFalse(movieList.stream().anyMatch(s->!s.isAvailable()));
+        assertThat(movieList.stream().anyMatch(s->!s.isAvailable()), is(false));
     }
 
     @Test
     public void ReturnValidMovieWhenTryToCheckout(){
         Movie rentedMovie = repository.CheckoutMovie(1);
-        assertTrue(rentedMovie != null && !rentedMovie.isAvailable());
+        assertThat(rentedMovie != null && !rentedMovie.isAvailable(), is(true));
     }
 }

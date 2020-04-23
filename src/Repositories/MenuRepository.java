@@ -23,6 +23,8 @@ public class MenuRepository {
         this.menuList.add(new Menu(3,"Return a book",true));
         this.menuList.add(new Menu(4,"List of available movies",true));
         this.menuList.add(new Menu(5,"Check out a movie",true));
+        this.menuList.add(new Menu(6,"Log In",true));
+        this.menuList.add(new Menu(7,"Show my information",true));
         this.menuList.add(new Menu(0,"Exit the application ",true));
     }
 

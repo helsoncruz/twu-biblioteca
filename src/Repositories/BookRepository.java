@@ -37,7 +37,7 @@ public class BookRepository {
     }
 
     public Book CheckoutBook(int id){
-        if(IsIdValid(id) && !bookList.get(id).isAvailable()){
+        if(IsIdValid(id) && bookList.get(id).isAvailable()){
             Book checkedOut = bookList.get(id);
             checkedOut.setAvailable(false);
             return checkedOut;

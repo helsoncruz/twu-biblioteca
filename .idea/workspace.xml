@@ -21,13 +21,23 @@
   <component name="ChangeListManager">
     <list default="true" id="5fc4ce9e-481f-41e2-8870-89fbcaa3f67f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/Model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/Model/Customer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/biblioteca/Repositories/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/Repositories/BookRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/biblioteca/Repositories/MenuRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/Repositories/MenuRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/View/MenuView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/View/MenuView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/MenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/MenuRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/MenuRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/MovieRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/MovieRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Enums/MovieRating.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Movie.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repositories/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/BookRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repositories/MenuRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/MenuRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositories/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/MovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MenuView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MenuRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MenuRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +81,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Model" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.BibliotecaApp">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
@@ -85,10 +100,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in biblioteca" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MenuRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MenuRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MovieRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BSP.BeforeRunTask" enabled="true" />
@@ -105,23 +143,6 @@
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MovieRepositoryTest" />
       <option name="METHOD_NAME" value="ReturnValidMovieWhenTryToCheckout" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MovieRepositoryTest.ShouldAllMoviesAreAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MovieRepositoryTest" />
-      <option name="METHOD_NAME" value="ShouldAllMoviesAreAvailable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,10 +176,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.BibliotecaApp" />
-        <item itemvalue="JUnit.MovieRepositoryTest.ReturnValidMovieWhenTryToCheckout" />
-        <item itemvalue="JUnit.All in biblioteca" />
-        <item itemvalue="JUnit.MovieRepositoryTest.ShouldAllMoviesAreAvailable" />
+        <item itemvalue="JUnit.MenuRepositoryTest" />
+        <item itemvalue="JUnit.MovieRepositoryTest" />
         <item itemvalue="JUnit.MovieRepositoryTest.VerifyThatRepositoryIsNotEmpty" />
+        <item itemvalue="JUnit.MovieRepositoryTest.ReturnValidMovieWhenTryToCheckout" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +194,9 @@
       <option name="presentableId" value="Default" />
       <updated>1587554315683</updated>
       <workItem from="1587554317430" duration="12764000" />
-      <workItem from="1587588760787" duration="17222000" />
+      <workItem from="1587588760787" duration="21428000" />
+      <workItem from="1587675134779" duration="476000" />
+      <workItem from="1587675830407" duration="4856000" />
     </task>
     <servers />
   </component>
@@ -205,61 +228,91 @@
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="100" y="123" width="1240" height="627" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.827@0.23.1440.827" timestamp="1587565432764" />
-    <state x="533" y="144" key="#com.intellij.ide.util.MemberChooser" timestamp="1587652741306">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state x="-1209" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1587680690255">
+      <screen x="-1920" y="-62" width="1920" height="1080" />
     </state>
+    <state x="-1209" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587667867706" />
+    <state x="-1209" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587680690255" />
     <state x="533" y="144" key="#com.intellij.ide.util.MemberChooser/0.23.1440.827@0.23.1440.827" timestamp="1587652741306" />
+    <state x="-1222" y="261" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1587680381123">
+      <screen x="-1920" y="-62" width="1920" height="1080" />
+    </state>
+    <state x="-1222" y="261" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587680381123" />
     <state width="504" height="466" key="DebuggerActiveHint" timestamp="1587643093590">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state width="504" height="466" key="DebuggerActiveHint/0.23.1440.827@0.23.1440.827" timestamp="1587643093590" />
-    <state width="1878" height="288" key="GridCell.Tab.0.bottom" timestamp="1587666952619">
-      <screen x="-1920" y="-34" width="1920" height="1080" />
+    <state width="1878" height="438" key="GridCell.Tab.0.bottom" timestamp="1587678981395">
+      <screen x="-1920" y="-62" width="1920" height="1080" />
     </state>
-    <state width="1878" height="288" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587666952619" />
+    <state width="1878" height="288" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587667131138" />
+    <state width="1878" height="438" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587678981395" />
     <state width="1398" height="288" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1587653321762" />
-    <state width="1878" height="288" key="GridCell.Tab.0.center" timestamp="1587666952617">
-      <screen x="-1920" y="-34" width="1920" height="1080" />
+    <state width="1878" height="438" key="GridCell.Tab.0.center" timestamp="1587678981393">
+      <screen x="-1920" y="-62" width="1920" height="1080" />
     </state>
-    <state width="1878" height="288" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587666952617" />
+    <state width="1878" height="288" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587667131137" />
+    <state width="1878" height="438" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587678981393" />
     <state width="1398" height="288" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1587653321761" />
-    <state width="1878" height="288" key="GridCell.Tab.0.left" timestamp="1587666952616">
-      <screen x="-1920" y="-34" width="1920" height="1080" />
+    <state width="1878" height="438" key="GridCell.Tab.0.left" timestamp="1587678981392">
+      <screen x="-1920" y="-62" width="1920" height="1080" />
     </state>
-    <state width="1878" height="288" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587666952616" />
+    <state width="1878" height="288" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587667131136" />
+    <state width="1878" height="438" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587678981392" />
     <state width="1398" height="288" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1587653321760" />
-    <state width="1878" height="288" key="GridCell.Tab.0.right" timestamp="1587666952618">
-      <screen x="-1920" y="-34" width="1920" height="1080" />
+    <state width="1878" height="438" key="GridCell.Tab.0.right" timestamp="1587678981394">
+      <screen x="-1920" y="-62" width="1920" height="1080" />
     </state>
-    <state width="1878" height="288" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587666952618" />
+    <state width="1878" height="288" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587667131138" />
+    <state width="1878" height="438" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587678981394" />
     <state width="1398" height="288" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1587653321761" />
-    <state width="1878" height="376" key="GridCell.Tab.1.bottom" timestamp="1587666648739">
-      <screen x="-1920" y="-34" width="1920" height="1080" />
+    <state width="1878" height="376" key="GridCell.Tab.1.bottom" timestamp="1587678637520">
+      <screen x="-1920" y="-62" width="1920" height="1080" />
     </state>
     <state width="1878" height="376" key="GridCell.Tab.1.bottom/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587666648739" />
+    <state width="1878" height="376" key="GridCell.Tab.1.bottom/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587678637520" />
     <state width="1398" height="266" key="GridCell.Tab.1.bottom/0.23.1440.827@0.23.1440.827" timestamp="1587649542995" />
-    <state width="1878" height="376" key="GridCell.Tab.1.center" timestamp="1587666648738">
-      <screen x="-1920" y="-34" width="1920" height="1080" />
+    <state width="1878" height="376" key="GridCell.Tab.1.center" timestamp="1587678637518">
+      <screen x="-1920" y="-62" width="1920" height="1080" />
     </state>
     <state width="1878" height="376" key="GridCell.Tab.1.center/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587666648738" />
+    <state width="1878" height="376" key="GridCell.Tab.1.center/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587678637518" />
     <state width="1398" height="266" key="GridCell.Tab.1.center/0.23.1440.827@0.23.1440.827" timestamp="1587649542994" />
-    <state width="1878" height="376" key="GridCell.Tab.1.left" timestamp="1587666648737">
-      <screen x="-1920" y="-34" width="1920" height="1080" />
+    <state width="1878" height="376" key="GridCell.Tab.1.left" timestamp="1587678637518">
+      <screen x="-1920" y="-62" width="1920" height="1080" />
     </state>
     <state width="1878" height="376" key="GridCell.Tab.1.left/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587666648737" />
+    <state width="1878" height="376" key="GridCell.Tab.1.left/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587678637518" />
     <state width="1398" height="266" key="GridCell.Tab.1.left/0.23.1440.827@0.23.1440.827" timestamp="1587649542994" />
-    <state width="1878" height="376" key="GridCell.Tab.1.right" timestamp="1587666648738">
-      <screen x="-1920" y="-34" width="1920" height="1080" />
+    <state width="1878" height="376" key="GridCell.Tab.1.right" timestamp="1587678637519">
+      <screen x="-1920" y="-62" width="1920" height="1080" />
     </state>
     <state width="1878" height="376" key="GridCell.Tab.1.right/0.0.1440.900/-1920.-34.1920.1080@-1920.-34.1920.1080" timestamp="1587666648738" />
+    <state width="1878" height="376" key="GridCell.Tab.1.right/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587678637519" />
     <state width="1398" height="266" key="GridCell.Tab.1.right/0.23.1440.827@0.23.1440.827" timestamp="1587649542995" />
     <state x="508" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587561705308">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="508" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.827@0.23.1440.827" timestamp="1587561705308" />
+    <state x="-1254" y="74" width="588" height="807" key="find.popup" timestamp="1587680562834">
+      <screen x="-1920" y="-62" width="1920" height="1080" />
+    </state>
+    <state x="-1254" y="74" width="588" height="807" key="find.popup/0.0.1440.900/-1920.-62.1920.1080@-1920.-62.1920.1080" timestamp="1587680562834" />
     <state x="385" y="174" width="670" height="676" key="search.everywhere.popup" timestamp="1587592890900">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="385" y="174" width="670" height="676" key="search.everywhere.popup/0.23.1440.827@0.23.1440.827" timestamp="1587592890900" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="java.lang.String" fieldName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/biblioteca$BibliotecaApp.ic" NAME="BibliotecaApp Coverage Results" MODIFIED="1587673462310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.twu.biblioteca.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -12,7 +12,7 @@ public class Menu {
     }
 
     public boolean isActive() {
-        return active;
+        return this.active;
     }
 
     public void setActive(boolean active) {
@@ -20,7 +20,7 @@ public class Menu {
     }
 
     public String getOption() {
-        return option;
+        return this.option;
     }
 
     public void setOption(String option) {
@@ -28,7 +28,7 @@ public class Menu {
     }
 
     public int getOptionId() {
-        return optionId;
+        return this.optionId;
     }
 
     public void setOptionId(int optionId) {

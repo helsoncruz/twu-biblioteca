@@ -8,34 +8,34 @@ public class Book {
     private boolean Available;
 
     public Book(int id, String author, String title, int publicationYear, boolean available) {
-        BookId = id;
-        Author = author;
-        Title = title;
-        PublicationYear = publicationYear;
-        Available = available;
+        this.BookId = id;
+        this.Author = author;
+        this.Title = title;
+        this.PublicationYear = publicationYear;
+        this.Available = available;
     }
 
     public int getPublicationYear() {
-        return PublicationYear;
+        return this.PublicationYear;
     }
 
     public boolean isAvailable() {
-        return Available;
+        return this.Available;
     }
 
     public void setAvailable(boolean available) {
-        Available = available;
+        this.Available = available;
     }
 
     public String getAuthor() {
-        return Author;
+        return this.Author;
     }
 
     public String getTitle() {
-        return Title;
+        return this.Title;
     }
 
     public int getBookId() {
-        return BookId;
+        return this.BookId;
     }
 }

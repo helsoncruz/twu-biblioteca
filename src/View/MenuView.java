@@ -8,19 +8,19 @@ import java.util.ArrayList;
 
 public class MenuView {
     MenuRepository repository = new MenuRepository();
-    BookRepository bookRepository;
 
-    public MenuView(BookRepository bookRepository) {
-        this.bookRepository = bookRepository;
+
+    public MenuView() {
+
     }
 
-    public void ShowAllMenuOptions() {
-        ValidateMenuOptions();
+    public void ShowAllMenuOptions(BookRepository bookRepository, boolean authenticated) {
+        ValidateMenuOptions(bookRepository, authenticated);
         ArrayList<Menu> menuList = repository.getMenuList();
-        menuList.forEach(s -> System.out.printf("[%s] - %s\n", s.getOptionId(), s.getOption()));
+        menuList.forEach(s -> System.out.printf("\n[%s] - %s", s.getOptionId(), s.getOption()));
     }
 
-    private void ValidateMenuOptions(){
+    private void ValidateMenuOptions(BookRepository bookRepository, boolean authenticated){
         boolean anyBookAvailable = !bookRepository.getAvailableBookList().isEmpty();
         boolean anyBookUnavailable = !bookRepository.getUnavailableBookList().isEmpty();
 
@@ -36,6 +36,20 @@ public class MenuView {
             repository.DeactivateMenuOption(3);
         }else{
             repository.ActivateMenuOption(3);
+        }
+
+        if(!authenticated){
+            repository.DeactivateMenuOption(2);
+            repository.DeactivateMenuOption(3);
+            repository.DeactivateMenuOption(5);
+            repository.DeactivateMenuOption(7);
+            repository.ActivateMenuOption(6);
+        }else{
+            repository.ActivateMenuOption(2);
+            repository.ActivateMenuOption(3);
+            repository.ActivateMenuOption(5);
+            repository.ActivateMenuOption(7);
+            repository.DeactivateMenuOption(6);
         }
     }
 }
