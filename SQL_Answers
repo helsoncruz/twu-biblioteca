@@ -1,0 +1,38 @@
+Q1: select name from member mb 
+    join checkout_item ci on ci.member_id = mb.id
+    join book bo on bo.id = ci.book_id
+    where bo.id = 5;
+Anand Beck
+
+Q2: select count(id) from member where id not in (select member_id from checkout_item);
+37
+
+Q3: select title from book where id not in (select book_id from checkout_item where book_id is not null)
+union all
+select title from movie where id not in (select movie_id from checkout_item where movie_id is not null); 
+
+Fellowship of the Ring
+1984
+Tom Sawyer
+Catcher in the Rye
+To Kill a Mockingbird
+Domain Driven Design
+Thin Red Line
+Crouching Tiger, Hidden Dragon
+Lawrence of Arabia
+Office Space
+
+Q4: insert into book (id,title) values (54, 'The Pragmatic Programmer')
+insert into member (id, name) values (54,'Helson Filho')
+insert into checkout_item (member_id, book_id) values (54,54)
+
+Q5:
+select mb.name, count(ci.member_id) as qty
+  from checkout_item ci
+    join member mb on mb.id = ci.member_id
+    group by mb.name
+    having qty > 1;
+Anand Beck|3
+Frank Smith|3
+
+
